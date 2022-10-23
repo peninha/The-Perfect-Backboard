@@ -11,10 +11,10 @@ from funcoes import *
 import open3d as o3d
 
 ######## Configurações ##########
-Dots = np.load('data/Dots1.npy')
-Angles = np.load('data/Angles1.npy')
-#Angles2 = np.load('data/Angles2_CalcPorGrad.npy')
-Normals = np.load('data/Normals1.npy')
+Dots = np.load('Data/Dots1.npy')
+Angles = np.load('Data/Angles1.npy')
+#Angles2 = np.load('Data/Angles2_CalcPorGrad.npy')
+Normals = np.load('Data/Normals1.npy')
 
 output_path="Output2/"
 

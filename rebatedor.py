@@ -27,8 +27,8 @@ VY0range = range(000,301,50)
 ax = preparaPlot(visao, mostraQuadra)
 ####### Configura a Superfície da Tabela #######
 #Carrega de um Arquivo
-Dots = np.load('data/Dots0.npy')
-Angles = np.load('data/Angles0.npy')
+Dots = np.load('Data/Dots0.npy')
+Angles = np.load('Data/Angles0.npy')
 
 # Ou gera os pontos
 """
@@ -116,7 +116,7 @@ for deltaVZ0 in VXZ0range:
 
 ########## Faz a média dos valores, atualiza no Grid e plota Normais e Quadrados ###########
 try:
-    AnglesNovo = np.load("data/AnglesNovo.npy")
+    AnglesNovo = np.load("Data/AnglesNovo.npy")
 except FileNotFoundError:
     AnglesNovo = np.zeros((gridSizeX,gridSizeY,2))
 
@@ -128,6 +128,6 @@ for i in range(gridSizeX):
             #plotNormal(i, j, AnglesNovo, x=bolaRaio)  # Desenha as Normais do Grid #
             plotSquare(i,j, Dots, projeta=False) # Desenha os Quadrados Válidos
 
-np.save('data/AnglesNovo', AnglesNovo)
+np.save('Data/AnglesNovo', AnglesNovo)
 
 plt.show()

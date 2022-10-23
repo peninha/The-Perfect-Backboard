@@ -39,8 +39,8 @@ preparaPlot(visao, mostraQuadra)
 
 ####### Configura a Superfície da Tabela #######
 # Carrega de um Arquivo
-Dots = np.load('data/Dots2.npy')
-Angles = np.load('data/Angles2.npy')
+Dots = np.load('Data/Dots2.npy')
+Angles = np.load('Data/Angles2.npy')
 plotTabela(Dots, Angles)
 
 Theta = Angles[:,:,0]

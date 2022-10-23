@@ -20,8 +20,8 @@ ax = preparaPlot(visao)
 ax.view_init(elev=0., azim=0.01)
 ####### Configura a Superfície da Tabela #######
 #Carrega de um Arquivo
-Dots = np.load('data/Dots2.npy')
-Angles = np.load('data/Angles2.npy')
+Dots = np.load('Data/Dots2.npy')
+Angles = np.load('Data/Angles2.npy')
 
 if plotTabela:
     plotTabela(Dots, Angles, setas=mostraNormals, scale=scale)

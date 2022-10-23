@@ -11,8 +11,8 @@ from funcoes import *
 
 visao = 3 # 1 = aberta, 2 = fechada, 3 = Lado Direito da Tabela
 preparaPlot(visao)
-Dots = np.load('data/Dots0.npy')
-AnglesNovo = np.load("data/AnglesNovo.npy")
+Dots = np.load('Data/Dots0.npy')
+AnglesNovo = np.load("Data/AnglesNovo.npy")
 
 for i in range(gridSizeX):
     for j in range(gridSizeY-1,-1,-1):
