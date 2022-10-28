@@ -10,7 +10,7 @@ Gera a nova superfície a partir dos ângulos Phi e Theta calculados
 from funcoes import *
 
 ######## Configurações ########
-Angles = np.load('data/Angles2.npy')
+Angles = np.load('Data/Angles2.npy')
 visao = 3
 mostraCombinado = True
 dotSize = 1
